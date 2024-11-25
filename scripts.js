@@ -1,7 +1,5 @@
 const modalElement = document.getElementById("modal");
 
-const closeStatusElement = document.getElementById("close-status");
-
 const openBtn = document.getElementById("open-btn");
 
 const closeBtn = document.getElementById("close-btn");
@@ -36,7 +34,7 @@ const handleModalClick = ({ currentTarget, target }) => {
     }
 };
 
-document.addEventListener('keydown', (e) => {
+modalElement.addEventListener('cancel', (e) => {
     e.preventDefault()
     handleModalClose()
 })
